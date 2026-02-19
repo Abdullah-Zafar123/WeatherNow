@@ -1,14 +1,20 @@
 Overview:
-WeatherNow is a weather application that displays current weather information for a selected location. The project was built to explore data handling and interface design.
+WeatherNow is a weather information application that displays current weather data based on user input. The project focuses on structured data handling and clean presentation of information.
 
-Features:
+Core Functionality
+- Location-based weather display
+- Organized data rendering
+- Simple and readable interface
 
-1) Displays weather details by location
-2) Simple search functionality
-3) Clear and structured layout
+Architecture:
+- The backend logic is implemented in Java, managing data retrieval and processing. The front-end interface is structured using HTML and CSS for clarity and consistency.
 
 Tech Stack:
+- Java
+- HTML
+- CSS
 
-1) Java
-2) HTML
-3) CSS
+Setup:
+1) Clone the repository
+2) Configure environment
+3) Compile and run the application
