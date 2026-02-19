@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(180deg, hsl(210, 50%, 90%), hsl(210, 30%, 80%));
+    color: hsl(210, 20%, 20%);
+}
+
+.main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cityname {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid hsl(210, 10%, 50%);
+    font-weight: bold;
+    width: 320px;
+    box-shadow: 2px 2px 5px hsla(210, 10%, 10%, 0.2);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.cityname:focus {
+    border: 2px solid hsl(210, 70%, 50%);
+    box-shadow: 0px 0px 8px hsla(210, 70%, 50%, 0.5);
+    outline: none;
+}
+
+button[type="submit"] {
+    font-size: 1.5rem;
+    padding: 12px 20px;
+    background-color: hsl(120, 70%, 45%);
+    border: none;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
+    margin-top: 2px;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(120, 80%, 55%);
+}
+
+button[type="submit"]:active {
+    background-color: hsl(120, 60%, 40%);
+    transform: scale(0.95);
+}
+
+.card {
+    background: linear-gradient(180deg, rgb(128, 191, 255), rgb(255, 212, 128));
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.card.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+h1 {
+    margin: 10px 0 20px;
+    font-size: 2.5rem;
+    color: hsl(210, 20%, 15%);
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.discity, .distemp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsl(210, 30%, 25%);
+    margin: 10px 0;
+}
+
+.distemp {
+    color: hsl(0, 60%, 50%);
+}
+
+.disweather {
+    font-style: italic;
+    font-size: 2rem;
+    color: hsl(210, 25%, 35%);
+}
+
+.dishum {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: hsl(210, 30%, 30%);
+}
+
+.disemo {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+
+.diserror {
+    font-weight: bold;
+    font-size: 2rem;
+    color: tomato;
+    font-style: italic;
+    margin-top: 20px;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px hsla(0, 100%, 40%, 0.2);
+}
